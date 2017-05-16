@@ -11,7 +11,9 @@ namespace View
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            wucPainel painel1 = new wucPainel();
+
+            this.Page.Form.Controls.Add(painel1);
 
         }
     }

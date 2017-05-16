@@ -16,19 +16,9 @@
     <form id="form1" runat="server">
         <div id="divCorpo" class="clsCorpo">
 
+            
 
-            <uc1:wucPainel runat="server" id="wucPaine0" />
-
-          
-
-
-            <br />
-            <br />
         </div>
-
-
-
-
     </form>
 </body>
 </html>
