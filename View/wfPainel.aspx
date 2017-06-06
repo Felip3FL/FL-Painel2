@@ -16,6 +16,8 @@
     <form id="form1" runat="server">
         <div id="divCorpo" class="clsCorpo">
 
+
+            <asp:PlaceHolder ID="pchAreaPainel" runat="server"></asp:PlaceHolder>
             
 
         </div>

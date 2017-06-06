@@ -72,7 +72,9 @@
     <Content Include="Image\sinal-yellow.gif" />
     <Content Include="packages.config" />
     <Content Include="wfPainel.aspx" />
-    <Content Include="wucPainel.ascx" />
+    <Content Include="wucPainel.ascx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -95,9 +97,11 @@
     <Compile Include="wucPainel.ascx.cs">
       <DependentUpon>wucPainel.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="wucPainel.ascx.designer.cs">
       <DependentUpon>wucPainel.ascx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
   <ItemGroup>

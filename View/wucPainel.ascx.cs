@@ -10,25 +10,23 @@ namespace View
     public partial class wucPainel : System.Web.UI.UserControl
     {
 
-        public string local { get; private set; }
-        public string ip { get; private set; }
+    
+        public string local { get;  set; }
+        public string ip { get;  set; }
+
         public string statusConexao { get; set; }
         public string tempoDeResposta { get; private set; }
         public StatusFarol tipoSinal { get; set; }
 
-        //public wucPainel(string local, string ip, StatusFarol tempoDeResposta)
-        //{
-        //    this.local = local;
-        //    this.ip = ip;
-        //}
-
         protected void Page_Load(object sender, EventArgs e)
         {
-      
+
             statusConexao = "Conexão Normal";
 
-          
-            imgFarol.ImageUrl = Server.MapPath("Image/sinal-gree.gif");
+            lblIP.Text = ip;
+            lblLocal.Text = local;
+
+            //imgFarol.ImageUrl = "Image/sinal-gree.gif";
         }
 
         protected string enderecoImagemSinal()
@@ -41,7 +39,7 @@ namespace View
                 return "Image/sinal-yellow.gif";
             else
                 return null;
-        }   
+        }
 
     }
 }
