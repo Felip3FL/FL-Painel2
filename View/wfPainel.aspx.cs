@@ -12,14 +12,12 @@ namespace View
         protected void Page_Load(object sender, EventArgs e)
         {
       
-
             wucPainel painel1 = (wucPainel)Page.LoadControl("~/wucPainel.ascx");
 
             painel1.ip = "192.168.0.1";
             painel1.local = "874";
 
             pchAreaPainel.Controls.Add(painel1);
-
 
         }
 

@@ -18,15 +18,17 @@ namespace View
         public string tempoDeResposta { get; private set; }
         public StatusFarol tipoSinal { get; set; }
 
-        protected void Page_Load(object sender, EventArgs e)
+        public wucPainel()
         {
 
-            statusConexao = "Conexão Normal";
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
             lblIP.Text = ip;
             lblLocal.Text = local;
 
-            //imgFarol.ImageUrl = "Image/sinal-gree.gif";
         }
 
         protected string enderecoImagemSinal()
@@ -40,6 +42,8 @@ namespace View
             else
                 return null;
         }
+
+
 
     }
 }
